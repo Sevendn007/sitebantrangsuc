@@ -46,7 +46,7 @@ async function main() {
   // Banners
   const banners = [
     {
-      title: "Bộ sưu tập Ngọc Trai Á Đông",
+      title: "Bộ sưu tập Trang Sức Lâm Thư",
       subtitle: "Ra mắt mùa Xuân 2026",
       image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=2000&q=80",
       link: "/san-pham",

@@ -124,7 +124,7 @@ export default function Header() {
             </div>
             <div className="mt-4 flex flex-wrap gap-2 text-xs">
               <span className="text-ink-800/60 uppercase tracking-widest">Gợi ý:</span>
-              {["nhẫn cưới", "kim cương", "ngọc trai", "vàng 18K"].map((s) => (
+              {["nhẫn", "dây chuyền", "lắc tay", "bông tai"].map((s) => (
                 <Link key={s} href={`/san-pham?q=${encodeURIComponent(s)}`} onClick={() => setSearchOpen(false)} className="text-gold-700 hover:underline">
                   {s}
                 </Link>

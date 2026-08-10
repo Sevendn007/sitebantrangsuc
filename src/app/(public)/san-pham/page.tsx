@@ -75,7 +75,7 @@ export default async function ProductsPage({
     { label: "Trên 30 triệu", min: 30_000_000, max: 999_999_999 },
   ];
 
-  const materials = ["Vàng 18K", "Vàng trắng", "Kim cương", "Ngọc trai", "Sapphire", "Emerald"];
+  const materials = ["Bạc S925", "Vàng 18K", "Vàng trắng", "Kim cương"];
 
   function buildLink(overrides: Record<string, string | undefined>) {
     const merged: Record<string, string | undefined> = {
