@@ -48,7 +48,7 @@ async function main() {
     {
       title: "Bộ sưu tập Trang Sức Lâm Thư",
       subtitle: "Ra mắt mùa Xuân 2026",
-      image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=2000&q=80",
+      image: "/showroom.jpg",
       link: "/san-pham",
       order: 1,
       active: true,
