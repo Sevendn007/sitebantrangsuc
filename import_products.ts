@@ -56,6 +56,7 @@ async function main() {
           salePrice: p.priceAmount, // no sale
           images: JSON.stringify(cleanImages),
           categoryId: catId,
+          description: p.description || p.name,
           content: `<p>${p.description}</p>`,
           isNew: Math.random() > 0.5,
           featured: Math.random() > 0.8,
