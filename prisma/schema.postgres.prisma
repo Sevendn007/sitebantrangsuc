@@ -1,0 +1,137 @@
+// Đây là schema mẫu cho PostgreSQL (production).
+// Cách sử dụng:
+// 1. Đổi DATABASE_URL trong .env sang chuỗi kết nối Postgres (vd: postgresql://user:pass@host:5432/db)
+// 2. Copy đè file này lên prisma/schema.prisma
+// 3. npx prisma migrate deploy   (nếu đã có migrations) hoặc npx prisma db push
+// 4. npm run seed
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String
+  slug      String    @unique
+  order     Int       @default(0)
+  products  Product[]
+  createdAt DateTime  @default(now())
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  sku         String?
+  price       Int
+  salePrice   Int?
+  material    String?
+  weight      String?
+  sizes       String?
+  description String
+  content     String
+  images      String
+  featured    Boolean   @default(false)
+  isNew       Boolean   @default(false)
+  inStock     Boolean   @default(true)
+  categoryId  String?
+  category    Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  orderItems  OrderItem[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([categoryId])
+  @@index([featured])
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  excerpt     String
+  content     String
+  cover       String
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Banner {
+  id        String   @id @default(cuid())
+  title     String
+  subtitle  String?
+  image     String
+  video     String?
+  link      String?
+  order     Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String?
+  subject   String?
+  message   String
+  handled   Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Order {
+  id            String      @id @default(cuid())
+  code          String      @unique
+  customerName  String
+  customerPhone String
+  customerEmail String?
+  address       String
+  province      String?
+  district      String?
+  ward          String?
+  note          String?
+  subtotal      Int
+  shipping      Int         @default(0)
+  total         Int
+  paymentMethod String
+  paymentStatus String      @default("pending")
+  status        String      @default("new")
+  txnRef        String?
+  items         OrderItem[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  name      String
+  price     Int
+  quantity  Int
+  size      String?
+  image     String?
+}
+
+model SiteSetting {
+  id        String @id @default(cuid())
+  key       String @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}

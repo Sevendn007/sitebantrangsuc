@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg: #fbfaf7;
+  --ink: #1a1a1a;
+  --gold: #b1842b;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* Utility: fancy gold divider */
+.gold-line {
+  display: inline-block;
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #b1842b, transparent);
+  vertical-align: middle;
+  margin: 0 0.75rem;
+}
+
+/* Cards */
+.product-card img {
+  transition: transform 700ms ease;
+}
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Prose content for post/product details */
+.prose-luxe h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  margin: 1.75rem 0 0.75rem;
+  color: #1a1a1a;
+}
+.prose-luxe h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.375rem;
+  margin: 1.25rem 0 0.5rem;
+}
+.prose-luxe p {
+  margin: 0.75rem 0;
+  line-height: 1.85;
+  color: #333;
+}
+.prose-luxe ul {
+  list-style: disc;
+  margin: 0.75rem 0 0.75rem 1.25rem;
+}
+.prose-luxe a {
+  color: #8f6821;
+  text-decoration: underline;
+}
+.prose-luxe img {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* subtle noise */
+.bg-luxe {
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(201, 158, 61, 0.08), transparent 60%),
+    radial-gradient(900px 400px at -10% 10%, rgba(201, 158, 61, 0.06), transparent 60%),
+    #fbfaf7;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+/* Fade in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 700ms ease both; }
+
+/* Admin sidebar item active */
+.admin-nav a[aria-current="page"] {
+  background: #fbf7ee;
+  color: #6d4f19;
+  font-weight: 600;
+}
