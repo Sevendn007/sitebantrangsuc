@@ -56,7 +56,7 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <img
-          src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1200&q=80"
+          src="/showroom.jpg"
           alt="Cửa hàng"
           className="rounded-md w-full aspect-[4/3] object-cover shadow-luxe"
         />
