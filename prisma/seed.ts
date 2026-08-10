@@ -56,7 +56,7 @@ async function main() {
     {
       title: "Nhẫn cưới — Bền vững như tình yêu",
       subtitle: "Ưu đãi cặp đôi tháng 3",
-      image: "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=2000&q=80",
+      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=2000&q=80",
       link: "/san-pham?danh-muc=nhan-cuoi",
       order: 2,
       active: true,
@@ -144,7 +144,7 @@ async function main() {
       weight: "3.0 chỉ / đôi",
       sizes: ["6", "7", "8", "9", "10", "11", "12", "13"],
       images: [
-        "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=1000&q=80",
+        "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1000&q=80",
         "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=1000&q=80",
       ],
       featured: true,
@@ -246,7 +246,7 @@ async function main() {
     {
       title: "5 điều cần biết khi chọn nhẫn cưới kim cương",
       excerpt: "Từ 4C của kim cương đến ngân sách phù hợp — bí quyết giúp bạn chọn nhẫn cưới trọn đời.",
-      cover: "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=1400&q=80",
+      cover: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1400&q=80",
       content: `<h2>1. Hiểu về 4C</h2><p>Cut, Color, Clarity, Carat — bốn tiêu chí đánh giá kim cương.</p><h2>2. Chọn kim loại phù hợp</h2><p>Vàng trắng, vàng vàng, hay platinum tùy phong cách.</p><h2>3. Kiểm định GIA</h2><p>Luôn ưu tiên kim cương có chứng nhận GIA.</p>`,
     },
     {

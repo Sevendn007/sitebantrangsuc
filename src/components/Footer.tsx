@@ -53,9 +53,9 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gold-100/60">
           <span>© {new Date().getFullYear()} Lam Thu Jewelry. All rights reserved.</span>
           <span className="flex items-center gap-4 bg-white/10 px-3 py-1.5 rounded">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" className="h-3 object-contain" />
-            <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="MoMo" className="h-4 object-contain" />
-            <img src="https://vnpay.vn/s1/vnpay/logo-vnpay-white.png" alt="VNPay" className="h-4 object-contain bg-ink-900 p-0.5 rounded" />
+            <img src="https://cdn.iconscout.com/icon/free/png-256/visa-3-225544.png" alt="Visa" className="h-4 object-contain brightness-0 invert opacity-80" />
+            <img src="https://developers.momo.vn/v3/assets/images/square-8c08a00f550e40a2efafea4a005b1232.png" alt="MoMo" className="h-5 object-contain rounded-sm opacity-90" />
+            <img src="https://vnpay.vn/assets/images/logo-icon/logo-primary.svg" alt="VNPay" className="h-4 object-contain opacity-90 brightness-0 invert" />
           </span>
         </div>
       </div>
