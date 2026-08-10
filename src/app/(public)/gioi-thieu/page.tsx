@@ -56,7 +56,7 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <img
-          src="https://images.unsplash.com/photo-1602752275197-9d7a4bd7bd2d?w=1200&q=80"
+          src="https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=1200&q=80"
           alt="Cửa hàng"
           className="rounded-md w-full aspect-[4/3] object-cover shadow-luxe"
         />
@@ -68,8 +68,7 @@ export default function AboutPage() {
             Lam Thu Jewelry.
           </p>
           <ul className="mt-5 space-y-2 text-ink-800/80">
-            <li><strong>Showroom Sài Gòn:</strong> 123 Nguyễn Huệ, Q.1</li>
-            <li><strong>Showroom Hà Nội:</strong> 45 Tràng Tiền, Hoàn Kiếm</li>
+            <li><strong>Showroom Hồng Ngự:</strong> 21-23 Nguyễn Trãi, Thành phố Hồng Ngự, Tỉnh Đồng Tháp</li>
             <li><strong>Giờ mở cửa:</strong> 9:00 – 21:00 (T2 – CN)</li>
           </ul>
         </div>

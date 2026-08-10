@@ -56,7 +56,7 @@ async function main() {
     {
       title: "Nhẫn cưới — Bền vững như tình yêu",
       subtitle: "Ưu đãi cặp đôi tháng 3",
-      image: "https://images.unsplash.com/photo-1602752275197-9d7a4bd7bd2d?w=2000&q=80",
+      image: "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=2000&q=80",
       link: "/san-pham?danh-muc=nhan-cuoi",
       order: 2,
       active: true,
@@ -80,7 +80,7 @@ async function main() {
       sizes: ["6", "7", "8", "9", "10", "11", "12"],
       images: [
         "https://images.unsplash.com/photo-1603561596112-db542ade8b19?w=1000&q=80",
-        "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1000&q=80",
+        "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1000&q=80",
       ],
       featured: true,
       isNew: true,
@@ -111,7 +111,7 @@ async function main() {
       material: "Vàng trắng 18K, Kim cương 0.2ct x2",
       weight: "1.8 chỉ",
       images: [
-        "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=1000&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1000&q=80",
         "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=1000&q=80",
       ],
       featured: true,
@@ -144,7 +144,7 @@ async function main() {
       weight: "3.0 chỉ / đôi",
       sizes: ["6", "7", "8", "9", "10", "11", "12", "13"],
       images: [
-        "https://images.unsplash.com/photo-1602752275197-9d7a4bd7bd2d?w=1000&q=80",
+        "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=1000&q=80",
         "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=1000&q=80",
       ],
       featured: true,
@@ -161,7 +161,7 @@ async function main() {
       weight: "0.8 chỉ",
       images: [
         "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=1000&q=80",
-        "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=1000&q=80",
+        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1000&q=80",
       ],
       featured: false,
       isNew: true,
@@ -177,7 +177,7 @@ async function main() {
       weight: "3.6 chỉ",
       sizes: ["7", "8", "9", "10", "11"],
       images: [
-        "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1000&q=80",
+        "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1000&q=80",
         "https://images.unsplash.com/photo-1603561596112-db542ade8b19?w=1000&q=80",
       ],
       featured: true,
@@ -246,7 +246,7 @@ async function main() {
     {
       title: "5 điều cần biết khi chọn nhẫn cưới kim cương",
       excerpt: "Từ 4C của kim cương đến ngân sách phù hợp — bí quyết giúp bạn chọn nhẫn cưới trọn đời.",
-      cover: "https://images.unsplash.com/photo-1602752275197-9d7a4bd7bd2d?w=1400&q=80",
+      cover: "https://images.unsplash.com/photo-1572093551069-424a1484ff26?w=1400&q=80",
       content: `<h2>1. Hiểu về 4C</h2><p>Cut, Color, Clarity, Carat — bốn tiêu chí đánh giá kim cương.</p><h2>2. Chọn kim loại phù hợp</h2><p>Vàng trắng, vàng vàng, hay platinum tùy phong cách.</p><h2>3. Kiểm định GIA</h2><p>Luôn ưu tiên kim cương có chứng nhận GIA.</p>`,
     },
     {

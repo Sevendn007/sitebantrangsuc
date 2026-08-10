@@ -8,7 +8,6 @@ import { readCart } from "@/lib/cart";
 const NAV = [
   { href: "/", label: "Trang chủ" },
   { href: "/san-pham", label: "Sản phẩm" },
-  { href: "/bo-suu-tap", label: "Bộ sưu tập" },
   { href: "/bai-viet", label: "Cẩm nang" },
   { href: "/gioi-thieu", label: "Về chúng tôi" },
   { href: "/lien-he", label: "Liên hệ" },
@@ -46,8 +45,8 @@ export default function Header() {
           <span>Miễn phí vận chuyển toàn quốc cho đơn từ 3.000.000₫</span>
           <span className="flex items-center gap-4">
             <Link href="/don-hang" className="hover:text-white flex items-center gap-1"><Package size={12} /> Tra cứu đơn</Link>
-            <a href="tel:0987654321" className="flex items-center gap-1 hover:text-white">
-              <Phone size={12} /> 0987 654 321
+            <a href="tel:+84847969666" className="flex items-center gap-1 hover:text-white">
+              <Phone size={12} /> +84 84 796 9666
             </a>
             <Link href="/lien-he" className="hover:text-white">Đặt lịch tư vấn</Link>
           </span>
@@ -79,14 +78,6 @@ export default function Header() {
             <button onClick={() => setSearchOpen(true)} aria-label="Tìm kiếm" className="text-ink-800 hover:text-gold-600">
               <Search size={20} />
             </button>
-            <Link href="/gio-hang" className="relative text-ink-800 hover:text-gold-600" aria-label="Giỏ hàng">
-              <ShoppingBag size={20} />
-              {count > 0 && (
-                <span className="absolute -right-2 -top-2 min-w-5 h-5 px-1 grid place-items-center rounded-full bg-gold-600 text-white text-[10px]">
-                  {count}
-                </span>
-              )}
-            </Link>
           </div>
         </div>
       </div>
@@ -106,7 +97,6 @@ export default function Header() {
               ))}
               <div className="border-t border-gold-100 pt-4 mt-2 space-y-3">
                 <Link href="/don-hang" className="block text-base uppercase tracking-widest text-ink-800" onClick={() => setOpen(false)}>Tra cứu đơn hàng</Link>
-                <Link href="/gio-hang" className="block text-base uppercase tracking-widest text-ink-800" onClick={() => setOpen(false)}>Giỏ hàng ({count})</Link>
               </div>
             </nav>
           </div>

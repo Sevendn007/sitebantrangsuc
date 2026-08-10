@@ -18,21 +18,11 @@ export default function Footer() {
             đẳng cấp.
           </p>
           <div className="mt-5 flex gap-3">
-            <a className="p-2 rounded-full border border-gold-700 hover:bg-gold-700/20" href="#" aria-label="Facebook"><Facebook size={16} /></a>
-            <a className="p-2 rounded-full border border-gold-700 hover:bg-gold-700/20" href="#" aria-label="Instagram"><Instagram size={16} /></a>
-            <a className="p-2 rounded-full border border-gold-700 hover:bg-gold-700/20" href="#" aria-label="Youtube"><Youtube size={16} /></a>
+            <a className="p-2 rounded-full border border-gold-700 hover:bg-gold-700/20" href="https://www.facebook.com/lamthujewelry" target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={16} /></a>
+            <a className="p-2 rounded-full border border-gold-700 hover:bg-gold-700/20" href="https://www.tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 15.68a6.34 6.34 0 006.33 6.33 6.33 6.33 0 006.33-6.33V8.89a8.4 8.4 0 004.53 1.32v-3.45a5.28 5.28 0 01-2.6-.07z"/></svg>
+            </a>
           </div>
-        </div>
-
-        <div>
-          <h4 className="font-serif text-lg mb-4 text-white">Bộ sưu tập</h4>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/san-pham?danh-muc=nhan" className="hover:text-white">Nhẫn</Link></li>
-            <li><Link href="/san-pham?danh-muc=day-chuyen" className="hover:text-white">Dây chuyền</Link></li>
-            <li><Link href="/san-pham?danh-muc=lac-tay" className="hover:text-white">Lắc tay</Link></li>
-            <li><Link href="/san-pham?danh-muc=bong-tai" className="hover:text-white">Bông tai</Link></li>
-            <li><Link href="/san-pham?danh-muc=nhan-cuoi" className="hover:text-white">Nhẫn cưới</Link></li>
-          </ul>
         </div>
 
         <div>
@@ -49,9 +39,9 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-lg mb-4 text-white">Liên hệ</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5"/> 123 Nguyễn Huệ, Q.1, TP.HCM</li>
-            <li className="flex items-center gap-2"><Phone size={16} /> 0987 654 321</li>
-            <li className="flex items-center gap-2"><Mail size={16} /> hello@vankhanhjewelry.com</li>
+            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0"/> <span>21-23 Nguyễn Trãi, Thành phố Hồng Ngự, Tỉnh Đồng Tháp</span></li>
+            <li className="flex items-center gap-2"><Phone size={16} /> +84 84 796 9666</li>
+            <li className="flex items-center gap-2"><Mail size={16} /> minhthuliticare@gmail.com</li>
           </ul>
           <p className="text-xs text-gold-100/60 mt-4">
             Giờ mở cửa: 9:00 — 21:00 (T2 — CN)
@@ -62,10 +52,10 @@ export default function Footer() {
       <div className="border-t border-gold-800/50">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gold-100/60">
           <span>© {new Date().getFullYear()} Lam Thu Jewelry. All rights reserved.</span>
-          <span className="flex items-center gap-4">
-            <img src="https://cdn.pixabay.com/photo/2021/12/06/13/45/visa-6850402_1280.png" alt="Visa" className="h-4 opacity-80" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Logo_MoMo_Circle.png/240px-Logo_MoMo_Circle.png" alt="MoMo" className="h-5 opacity-90" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Logo-VNPAY-QR-1.png/220px-Logo-VNPAY-QR-1.png" alt="VNPay" className="h-5 opacity-90" />
+          <span className="flex items-center gap-4 bg-white/10 px-3 py-1.5 rounded">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" className="h-3 object-contain" />
+            <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="MoMo" className="h-4 object-contain" />
+            <img src="https://vnpay.vn/s1/vnpay/logo-vnpay-white.png" alt="VNPay" className="h-4 object-contain bg-ink-900 p-0.5 rounded" />
           </span>
         </div>
       </div>

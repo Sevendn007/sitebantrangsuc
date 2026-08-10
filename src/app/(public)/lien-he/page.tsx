@@ -22,9 +22,9 @@ export default function ContactPage() {
         </div>
         <div className="space-y-6">
           {[
-            { icon: MapPin, t: "Địa chỉ", d: "123 Nguyễn Huệ, Quận 1, TP.HCM" },
-            { icon: Phone, t: "Hotline", d: "0987 654 321 – 1900 1234" },
-            { icon: Mail, t: "Email", d: "hello@vankhanhjewelry.com" },
+            { icon: MapPin, t: "Địa chỉ", d: "21-23 Nguyễn Trãi, TP. Hồng Ngự, Đồng Tháp" },
+            { icon: Phone, t: "Hotline", d: "+84 84 796 9666" },
+            { icon: Mail, t: "Email", d: "minhthuliticare@gmail.com" },
             { icon: Clock, t: "Giờ mở cửa", d: "9:00 – 21:00 (T2 – CN)" },
           ].map((c, i) => (
             <div key={i} className="flex gap-4 bg-white p-5 rounded-md border border-gold-100">
@@ -40,7 +40,7 @@ export default function ContactPage() {
           <iframe
             title="map"
             className="w-full h-64 rounded-md border border-gold-100"
-            src="https://www.google.com/maps?q=Nguyen+Hue,+HCM&output=embed"
+            src="https://www.google.com/maps?q=Nguyen+Trai,+Hong+Ngu,+Dong+Thap&output=embed"
           />
         </div>
       </div>

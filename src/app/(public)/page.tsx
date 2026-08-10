@@ -50,37 +50,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <Reveal>
-          <SectionTitle
-            eyebrow="Danh mục"
-            title="Chọn phong cách của riêng bạn"
-            desc="Khám phá các danh mục trang sức tinh xảo, mỗi thiết kế mang một ngôn ngữ riêng."
-          />
-        </Reveal>
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {categories.map((c, i) => (
-            <Reveal key={c.id} delay={i * 0.05}>
-              <Link href={`/san-pham?danh-muc=${c.slug}`} className="group relative aspect-square rounded-full overflow-hidden border border-gold-200 bg-gold-50 hover:shadow-luxe transition block">
-                <img
-                  src={`https://images.unsplash.com/photo-${
-                    ["1599643477877-530eb83abc8e","1605100804763-247f67b3557e","1543294001-f7cd5d7fb516","1602751584552-8ba73aad10e1","1611085583191-a3b181a88401","1596944924616-7b38e7cfac36"][i % 6]
-                  }?w=600&q=80`}
-                  alt={c.name}
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-1000"
-                />
-                <div className="absolute inset-0 bg-black/25 group-hover:bg-black/45 transition" />
-                <div className="absolute inset-0 grid place-items-center text-white text-center">
-                  <div>
-                    <div className="text-[10px] uppercase tracking-[0.3em] text-gold-200">Bộ sưu tập</div>
-                    <div className="font-serif text-xl mt-1">{c.name}</div>
-                  </div>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-6">
